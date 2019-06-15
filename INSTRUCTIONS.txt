@@ -1,0 +1,28 @@
+So, first what you need to do is head over to discordapp.com/developers and create a bot account for your bot. You can
+customize it how you want here, like avatar and name.
+
+Then, go to the bot tab, hit add bot to create a bot user, and copy the token and paste that inside the ./data/settings.json file,
+where it indicates where the token should be.
+
+Cool, you have the user set up. Now, to invite it, click the OAuth tab on the bots page, and click the checkbox that says "bot".
+Copy-paste that link into a browser, and add it to your server.
+
+Hooray! You're not useless and managed to invite it! Now, go into ./data/words.json. There, you will find two fields.
+The first field is called an "array". It is basically a list of words that will be watched for by the bot. The formatting goes
+like this:
+
+["word", "word2", "word3"]
+
+etc. The other is the response message. That is sent once it finds a message with a word inside of it.
+
+Now you need node.js. Super easy install, just head over to nodejs.org and download and install. EZ stuff.
+
+Now, to make the bot go online, because that seems pretty important, simply open a CMD window, type "cd " and then the path
+to the bot directory. Should looks something like this:
+
+"cd C:\The\Path\To\The\Bot"
+
+then, type "node index". It should then be online.
+
+KEEP IN MIND: You either need to keep your PC on 24/7 or have some other way of hosting for it to stay online all the time.
+There are websites and such that can allow you to do that, but I don't use them so don't ask me :P
